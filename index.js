@@ -27,17 +27,14 @@ function runQuiz() {
 
     var numOfTrue = 0
     for (var i = 0; i < questionsArr.length; i++) {
-        var question = questionsArr[i]
-        console.log(question)
-        var answer = confirm(question)
+        console.log(questionsArr[i])
+        var answer = confirm(questionsArr)
         if (answer) {
             numOfTrue++
-        }
+        } 
     }
-    if (numOfTrue >= 4) {
+    if (numOfTrue >=4) {
         alert("You are smart")
-    } else {
-        alert("Now you know")
-    }
+    }  
+    
 }
-
